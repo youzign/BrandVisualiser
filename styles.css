@@ -1,0 +1,180 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.browser-frame {
+  max-width: 1200px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.browser-top {
+  background: #f1f3f4;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.browser-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.browser-action {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.browser-address-bar {
+  flex-grow: 1;
+  margin: 0 10px;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.browser-address {
+  color: #5f6368;
+  font-size: 14px;
+}
+
+.browser-menu {
+  width: 20px;
+  height: 20px;
+  background: #5f6368;
+  border-radius: 50%;
+}
+
+.browser-content {
+  padding: 20px 170px;
+}
+
+header {
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Changed to align items to the top */
+  padding: 40px 0;
+  gap: 170px; /* Added gap to create space between content and preview */
+}
+
+.hero-content {
+  flex: 1;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  color: #5f6368;
+  margin-bottom: 20px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #4285F4;
+  color: white;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #4285F4;
+  border: 1px solid #4285F4;
+}
+
+.color-preview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  width: 300px;
+  height: 225px;
+}
+
+.color-square {
+  border-radius: 8px;
+}
+
+.primary-color {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.tint1-color {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.accent-color {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.tint2-color {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.text-color {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.color-controls {
+  max-width: 860px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px 170px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.color-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.color-input label {
+  width: 100px;
+}
+
+.color-input input[type="color"] {
+  margin-right: 10px;
+}
+
+.color-input input[type="text"] {
+  width: 80px;
+  padding: 5px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="browser-frame">
+        <div class="browser-top">
+            <div class="browser-actions">
+                <span class="browser-action"></span>
+                <span class="browser-action"></span>
+                <span class="browser-action"></span>
+            </div>
+            <div class="browser-address-bar">
+                <span class="browser-address">https://mywebsite.com</span>
+            </div>
+            <div class="browser-menu"></div>
+        </div>
+        <div class="browser-content">
+            <header>
+                <div class="logo">My Website</div>
+            </header>
+            <main>
+                <div class="hero">
+                    <div class="hero-content">
+                        <h1>Visualise Your Colors With Brand Visualiser</h1>
+                        <p>Quickly view how your color palette will work on your website.</p>
+                        <div class="cta-buttons">
+                            <button id="getStartedBtn" class="btn btn-primary">Get Started</button>
+                            <button id="learnMoreBtn" class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="color-preview">
+                      <div class="color-square primary-color"></div>
+                      <div class="color-square tint1-color"></div>
+                      <div class="color-square accent-color"></div>
+                      <div class="color-square tint2-color"></div>
+                      <div class="color-square text-color"></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="color-controls">
+        <div class="color-input">
+            <label for="primary">Dominant:</label>
+            <input type="color" id="primary" value="#4285F4">
+            <input type="text" id="primary-text" value="#4285F4">
+        </div>
+        <div class="color-input">
+            <label for="accent">Accent:</label>
+            <input type="color" id="accent" value="#FFA726">
+            <input type="text" id="accent-text" value="#FFA726">
+        </div>
+        <div class="color-input">
+            <label for="base">Base:</label>
+            <input type="color" id="base" value="#FFFFFF">
+            <input type="text" id="base-text" value="#FFFFFF">
+        </div>
+        <div class="color-input">
+            <label for="tint1">Tint 1:</label>
+            <input type="color" id="tint1" value="#A8C7FA">
+            <input type="text" id="tint1-text" value="#A8C7FA">
+        </div>
+        <div class="color-input">
+            <label for="tint2">Tint 2:</label>
+            <input type="color" id="tint2" value="#FFE0B2">
+            <input type="text" id="tint2-text" value="#FFE0B2">
+        </div>
+        <div class="color-input">
+            <label for="text">Text:</label>
+            <input type="color" id="text" value="#000000">
+            <input type="text" id="text-text" value="#000000">
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
